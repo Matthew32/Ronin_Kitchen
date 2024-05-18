@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">浪人 Kitchen</string>
+    <string name="entry_point_text">Let\'s start 浪人さん</string>
+    <string name="start_journey_button_text">Start journey</string>
+    <string name="let_s_start_floating_button">Let\'s start</string>
+    <string name="today_i_m_feeling">"Today i'm feeling "</string>
+    <string name="and_my_usual_taste_is">" and my usual taste is "</string>
+    <string name="recommend_text">can you recommend me a good breakfast lunch and dinner for today, but in a japanese samurai ronin style?</string>
+</resources>
