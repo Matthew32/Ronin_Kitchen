@@ -1,6 +1,5 @@
-package com.example.myapplication
+package com.myapplication.showresults.controllers
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
@@ -8,8 +7,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.myapplication.gemini.GeminiRequest
-import com.google.android.material.button.MaterialButton
+import com.example.myapplication.R
+import com.myapplication.services.gemini.GeminiRequest
 import kotlinx.coroutines.launch
 
 final class ShowResultActivity : ComponentActivity() {

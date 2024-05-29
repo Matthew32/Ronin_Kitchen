@@ -1,11 +1,13 @@
-package com.example.myapplication
+package com.myapplication.choosetaste.controllers
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import com.example.myapplication.R
 import com.google.android.material.button.MaterialButton
+import com.myapplication.showresults.controllers.ShowResultActivity
 
-class ChooseTasteActivity : ComponentActivity() {
+class ChooseTaste : ComponentActivity() {
     private lateinit var tasteButtons: Array<MaterialButton>
     private var intentFeelingExtra: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {

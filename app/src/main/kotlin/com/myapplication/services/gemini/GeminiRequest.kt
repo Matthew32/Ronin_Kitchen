@@ -1,8 +1,7 @@
-package com.example.myapplication.gemini
+package com.myapplication.services.gemini
 
 import androidx.activity.ComponentActivity
 import com.example.myapplication.R
-import com.example.myapplication.BuildConfig
 import com.google.ai.client.generativeai.GenerativeModel
 
 class GeminiRequest(
@@ -19,7 +18,7 @@ class GeminiRequest(
             // For text-only input, use the gemini-pro model
             modelName = "gemini-pro",
             // Access your API key as a Build Configuration variable (see "Set up your API key" above)
-            apiKey = BuildConfig.GEMINI_API_KEY
+            apiKey = "apiKey"
         )
 
         val prompt = getPrompt(feeling, taste)

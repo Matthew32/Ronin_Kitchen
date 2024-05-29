@@ -1,11 +1,13 @@
-package com.example.myapplication
+package com.myapplication.feeling.controllers
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import com.myapplication.choosetaste.controllers.ChooseTaste
+import com.example.myapplication.R
 import com.google.android.material.button.MaterialButton
 
-final class ChooseFeelingActivity : ComponentActivity() {
+final class ChooseFeeling : ComponentActivity() {
     private lateinit var feelingButtons: Array<MaterialButton>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,7 @@ final class ChooseFeelingActivity : ComponentActivity() {
         feelingButtons.forEach { element ->
             element.setOnClickListener {
                 val buttonText = element.text
-                val intent = Intent(this, ChooseTasteActivity::class.java)
+                val intent = Intent(this, ChooseTaste::class.java)
                 intent.putExtra("feeling", buttonText)
                 startActivity(intent)
                 finish()
